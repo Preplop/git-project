@@ -1,0 +1,2 @@
+I successfully connected my github to laptop using ssh-key which I generated on my ubuntu laptop and added the key in github UI. 
+now I have cloned the repo and added this file to it , next I will push this back to github and the task is complete.
