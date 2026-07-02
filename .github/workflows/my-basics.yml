@@ -1,5 +1,8 @@
 # GutHub Actions - by Giorgi Kutsia - my-basics
 name: MyGitHubActions-basics-giorgikutsia
+env:
+  APPLICATION_NAME: "MyFlask"
+  DEPLOY_PACKAGE_NAME    : "flask-deploy-version-${{ github.sha }}"
 
 on:
   push:
@@ -16,6 +19,11 @@ jobs:
       run: |
         echo Add other actions build,
         echo test and deploy my Project.
+    - name: Execute few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
+        echo "Application name - ${{ env.APPLICATION_NAME }}"
         
   my_deploy:
     runs-on: ubuntu-latest
@@ -23,3 +31,5 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World from deploy"
+      - name: Execute few commands
+        run: echo "Application name - ${{ env.DEPLOY_PACKAGE_NAME }}"
