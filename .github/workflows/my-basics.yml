@@ -1,0 +1,24 @@
+# GutHub Actions - by Giorgi Kutsia - my-basics
+name: MyGitHubActions-basics-giorgikutsia
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  my_testing:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: echo "Hello World from testing"
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions build,
+        echo test and deploy my Project.
+        
+  my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World from deploy"
