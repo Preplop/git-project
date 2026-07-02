@@ -42,7 +42,7 @@ jobs:
         run: |
           echo "Var1 = ${{ env.VAR1}}"
           echo "VAR2 = ${{ env.VAR2}}"
-          echo "VAR3 = $LOCALVAR"
+          echo "VAR3 = $LOCAL_VAR"
         env:
           LOCAL_VAR: "This is Superr local ENvironment variable"
       
