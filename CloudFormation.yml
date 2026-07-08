@@ -358,3 +358,4 @@ Outputs:
     Description: 'Database EC2 AZ2 Private IP'
     Value: !GetAtt DatabaseEC2AZ2.PrivateIp
   
+# you can check the Drawing of the whole Infrastructure in here https://app.diagrams.net/#LCloudFormation-Infrastructure.drawio#%7B%22pageId%22%3A%22emiY_FFXVSXrt1m8EYwU%22%7D
